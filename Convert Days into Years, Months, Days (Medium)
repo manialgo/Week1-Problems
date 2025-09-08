@@ -14,7 +14,6 @@ Years: 1
 Months: 1
 Days: 5
 */
-
 package week1;
 import java.util.Scanner;
 public class DaysToYearMonthDay {
