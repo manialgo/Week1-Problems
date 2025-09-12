@@ -1,0 +1,30 @@
+/*
+Q3. Divisible by 3 and 5 (Easy)
+Check whether the given number is divisible by both 3 and 5.
+Input format :
+The input consists of an integer.
+Output format :
+The output prints "Yes" if divisible, otherwise "No".
+Sample test cases :
+Input :
+15
+Output :
+Yes
+Input :
+7
+Output :
+No
+*/
+package week1;
+import java.util.Scanner;
+public class DivisibleBy3And5 {
+	public static void DivideBy3And5(int n) {
+		System.out.println((n%3==0 && n%5==0)? "Yes":"No");
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		DivideBy3And5(n);
+		sc.close();
+	}
+}

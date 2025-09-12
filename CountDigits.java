@@ -1,0 +1,28 @@
+/*
+Q20. Count Digits (Easy)
+Count the number of digits in a number.
+Input format :
+An integer.
+Output format :
+Digit count.
+Sample test cases :
+Input :
+98765
+Output :
+5
+*/
+package week1;
+import java.util.Scanner;
+public class CountDigits {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n=sc.nextInt();
+		int count=0;	
+		while(n>0) {
+			count++;			
+			n/=10;
+		}
+		System.out.println(count);
+		sc.close();
+	}
+}

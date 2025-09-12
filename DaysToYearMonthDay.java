@@ -1,0 +1,36 @@
+/*
+Q4. Convert Days into Years, Months, Days (Medium)
+Convert the given number of days into completed years, months, and remaining days. Assume 1
+year = 365 days, 1 month = 30 days.
+Input format :
+The input consists of an integer (days).
+Output format :
+The output prints completed years, months, and days.
+Sample test cases :
+Input :
+400
+Output :
+Years: 1
+Months: 1
+Days: 5
+*/
+package week1;
+import java.util.Scanner;
+public class DaysToYearMonthDay {
+	public static void daystoymd(int n) {
+		int y = 365, m=30, ny, nm, d;
+		ny = n/y;
+		n = n %y;
+		nm = n/m;
+		d = n %m;
+		System.out.println("Years: " + ny);
+		System.out.println("Months: " + nm);
+		System.out.println("Days: " + d);
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		daystoymd(n);
+		sc.close();
+	}
+}
